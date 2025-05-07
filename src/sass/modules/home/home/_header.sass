@@ -1,3 +1,105 @@
+body
+    background-color: $color-background
 header
-    background-color: black
-    
+    .topbar
+        display: flex
+        padding: 0.6rem 4rem
+        justify-content: space-between
+        .contact-info
+            display: flex
+            justify-content: center
+            gap: 0.8rem
+            a
+                color: black
+                display: flex
+                align-items: center
+                justify-content: center
+                svg
+                    fill: $color-primary
+
+        .languages
+            ul
+                display: flex
+                list-style: none
+                gap: 0.4rem
+                li
+                    a
+                        color: black
+
+    nav
+        font-family: $font-primary
+        background-color: $color-background
+        opacity: 80%
+        color: $color-white
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 2.5rem
+        padding: 0.6rem 0.8rem
+        ul
+            display: flex
+            list-style: none
+            li
+                padding: 1rem
+        button
+            border-radius: 15px
+            border: $color-primary 2px solid
+            background-color: transparent
+            padding: 6px 24px
+            color: $color-white
+            opacity: 80%
+a
+    text-decoration: none
+    color: $color-white
+    font-family: $font-primary
+    font-size: 14px
+    text-align: center
+    h1
+        font-family: $font-secondary
+        font-size: 30px
+.nav-respo
+    display: none
+.close-nav
+    display: none
+
+@media (max-width:480px)
+    header
+        width: 100%
+        .nav-respo
+            display: block
+        .topbar
+            padding-inline: 0.8rem
+            justify-content: space-between
+            align-items: center
+            .contact-info
+                justify-content: space-between
+                width: 100% !important
+            .languages
+                display: none
+        nav
+            button
+                display: none
+            ul
+                background-color: $nav-mobile-background-color !important
+                width: 80% !important
+                height: 80vh !important
+                right: -200% !important
+                position: fixed !important
+                flex-direction: column
+                justify-content: start
+                align-items: baseline !important
+                padding: 3vh !important
+                top: 10vh !important
+                border-radius: 10px !important
+                transition: 0.5s !important
+.overflow
+    background-color: $color-dark-grey
+    opacity: 60%
+    overflow: hidden
+.displayclose-nav
+    position: fixed
+    display: block
+    left: 90vw
+    top: 3vh
+    fill: white
+    z-index: 100000

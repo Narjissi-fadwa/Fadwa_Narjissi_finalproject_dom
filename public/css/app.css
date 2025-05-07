@@ -1,5 +1,136 @@
-header {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0c0b09;
+}
+
+header .topbar {
+  display: flex;
+  padding: 0.6rem 4rem;
+  justify-content: space-between;
+}
+header .topbar .contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+header .topbar .contact-info a {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .topbar .contact-info a svg {
+  fill: #cda45e;
+}
+header .topbar .languages ul {
+  display: flex;
+  list-style: none;
+  gap: 0.4rem;
+}
+header .topbar .languages ul li a {
+  color: black;
+}
+header nav {
+  font-family: "Poppins", sans-serif;
+  background-color: #0c0b09;
+  opacity: 80%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 0.6rem 0.8rem;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  padding: 1rem;
+}
+header nav button {
+  border-radius: 15px;
+  border: #cda45e 2px solid;
+  background-color: transparent;
+  padding: 6px 24px;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+a h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+.nav-respo {
+  display: none;
+}
+
+.close-nav {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+  header .nav-respo {
+    display: block;
+  }
+  header .topbar {
+    padding-inline: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .topbar .contact-info {
+    justify-content: space-between;
+    width: 100% !important;
+  }
+  header .topbar .languages {
+    display: none;
+  }
+  header nav button {
+    display: none;
+  }
+  header nav ul {
+    background-color: #29261f !important;
+    width: 80% !important;
+    height: 80vh !important;
+    right: -200% !important;
+    position: fixed !important;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline !important;
+    padding: 3vh !important;
+    top: 10vh !important;
+    border-radius: 10px !important;
+    transition: 0.5s !important;
+  }
+}
+.overflow {
+  background-color: #1a1a1a;
+  opacity: 60%;
+  overflow: hidden;
+}
+
+.displayclose-nav {
+  position: fixed;
+  display: block;
+  left: 90vw;
+  top: 3vh;
+  fill: white;
+  z-index: 100000;
 }
 
 /*# sourceMappingURL=app.css.map */
