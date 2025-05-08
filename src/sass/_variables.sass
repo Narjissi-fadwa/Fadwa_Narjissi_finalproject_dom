@@ -1,3 +1,5 @@
+@import ../../node_modules/bootstrap/scss/functions
+@import ../../node_modules/bootstrap/scss/variables
 // Fonts
 $font-primary: 'Poppins', sans-serif
 $font-secondary: 'Playfair Display', serif
@@ -12,6 +14,9 @@ $color-light-grey: #eeeeee
 $color-dark-grey: #1a1a1a
 $color-accent-red: #e03a3c
 $nav-mobile-background-color: #29261f
+
+$colors: ("bg-1": $color-background , "default": $color-light-grey , 'heading':$color-white ,'accent':$color-primary)
+$theme-colors: map-merge($colors , $theme-colors)
 
 //spacers
 
