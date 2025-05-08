@@ -1,5 +1,5 @@
 body
-    // background-color: $color-background
+    background-color: $color-background
     .home
         background-image: url('/public/images/hero-bg.jpg')
         background-size: cover
@@ -12,10 +12,9 @@ body
         padding: 100px 0
     .hero-title
         z-index: 3
-        
-        
+
         .title
-            
+
             h2
                 font-family: $font-secondary
                 font-size: 48px
@@ -74,7 +73,7 @@ body
     .about-content
         z-index: 3
 .about-img
-        border: 5px #f5f4f435 solid 
+    border: 5px #f5f4f435 solid
 
 .about::before
     content: ""
@@ -82,3 +81,26 @@ body
     height: 100%
     background-color: #00000090
     position: absolute
+
+.why-us
+    .whyus-title
+        h2
+            font-family: $font-secondary
+        p
+            font-family: $font-secondary
+        h2::after
+            content: ""
+            width: 120px
+            height: 1px
+            display: inline-block
+            background: $color-primary
+            margin: 4px 10px
+    .content-whyus
+        .cards-whyus
+            gap: 1rem
+            .card
+                .card-item
+                    h4
+                        a
+                            font-family: $font-secondary
+
