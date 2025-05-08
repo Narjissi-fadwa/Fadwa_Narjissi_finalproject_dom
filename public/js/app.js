@@ -1,5 +1,5 @@
 let nav = document.querySelector('.nav-respo')
-let navbar = document.querySelector('.navbar-nav')
+let navbar = document.querySelector('.navlist')
 let mybody = document.querySelector('body')
 let closenav = document.querySelector('.close-nav')
 nav.addEventListener('click' , () => {

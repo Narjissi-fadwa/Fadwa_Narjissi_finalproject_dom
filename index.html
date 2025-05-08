@@ -7,12 +7,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="./public/css/app.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
+
+
     <!--Header-->
     <header>
         <svg class="close-nav" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -47,11 +49,11 @@
                 </ul>
             </div>
         </div>
-        <nav class="navbar ">
+        <nav class="mynav d-flex align-items-center justify-content-center position-fixed">
             <a class="" href="index.html">
                 <h1 class="sitename ">Restaurantly</h1>
             </a>
-            <ul class="navbar-nav">
+            <ul class="navlist d-flex align-items-center justify-content-center list-unstyled ">
                 <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="#Home">Home</a>
                 </li>
@@ -80,11 +82,11 @@
                         Dropdown
                     </a>
                     <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Dropdown1</a>
-                        <a class="dropdown-item" href="#">dropdown2</a>
-                        <a class="dropdown-item" href="#">dropdown3</a>
-                        <a class="dropdown-item" href="#">dropdown4</a>
-                    </div> -->
+                    <a class="dropdown-item" href="#">Dropdown1</a>
+                    <a class="dropdown-item" href="#">dropdown2</a>
+                    <a class="dropdown-item" href="#">dropdown3</a>
+                    <a class="dropdown-item" href="#">dropdown4</a>
+                </div> -->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Contact">Contact</a>
@@ -98,8 +100,35 @@
             </svg>
         </nav>
     </header>
+
     <main>
-    <!--Home section-->
+        <!--Hero section-->
+        <section id="Home" class="home">
+
+            <div class="hero-title container d-flex align-items-center justify-content-center pt-20 position-relative">
+                <div class="title col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+                    <h2>Welcome to
+                        <span>Restaurantly</span>
+                    </h2>
+                    <p>Delivering great food for
+                        more than 18 years!</p>
+                    <div class="hero-btn d-flex pt-2">
+                        <a href="#Menu">Our Menu</a>
+                        <a href="#Book-a-table">Book a Table</a>
+                    </div>
+                </div>
+                <div class=" video col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                        </svg></a>
+                </div>
+            </div>
+
+        </section>
+        
     </main>
     <footer>
 

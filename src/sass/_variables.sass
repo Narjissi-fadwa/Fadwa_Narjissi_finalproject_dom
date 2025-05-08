@@ -1,6 +1,7 @@
 // Fonts
-$font-primary: 'Poppins', sans-serif;
-$font-secondary: 'Playfair Display', serif;
+$font-primary: 'Poppins', sans-serif
+$font-secondary: 'Playfair Display', serif
+$font-tertiary: 'Roboto'
 
 // Colors
 $color-primary: #cda45e
@@ -11,3 +12,13 @@ $color-light-grey: #eeeeee
 $color-dark-grey: #1a1a1a
 $color-accent-red: #e03a3c
 $nav-mobile-background-color: #29261f
+
+//spacers
+
+$spacer: 1vh
+$spacers: ()  
+
+@for $i from 1 through 100
+    $spacers: map-merge($spacers, ($i: $spacer * $i))
+
+
