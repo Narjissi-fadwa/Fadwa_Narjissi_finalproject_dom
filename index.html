@@ -589,6 +589,7 @@
 
         </section>
         <!-- events section -->
+        
         <section id="events" class="events py-8">
             <div class="event-container">
                 <div class="event-track">
@@ -601,8 +602,9 @@
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <div class="slide-features">
                                 <div class="feature-item">
-                                    <span class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                    <span class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-check2-circle"
+                                            viewBox="0 0 16 16">
                                             <path
                                                 d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
                                             <path
@@ -611,8 +613,9 @@
                                     <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                                 </div>
                                 <div class="feature-item">
-                                    <span class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                    <span class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-check2-circle"
+                                            viewBox="0 0 16 16">
                                             <path
                                                 d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
                                             <path
@@ -621,8 +624,9 @@
                                     <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
                                 </div>
                                 <div class="feature-item">
-                                    <span class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                    <span class="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-check2-circle"
+                                            viewBox="0 0 16 16">
                                             <path
                                                 d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
                                             <path
@@ -686,7 +690,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="event-nav">
                     <div class="event-indicator active" data-index="0"></div>
                     <div class="event-indicator" data-index="1"></div>
@@ -694,7 +698,57 @@
                 </div>
             </div>
         </section>
-    
+        <!-- book a table section -->
+        <section id="book-a-table" class="book-a-table section py-8">
+
+            <!-- Section Title -->
+            <div class="container section-title " >
+                <h2 class=" text-default fs-5">RESERVATION</h2>
+                <p class="text-accent fs-1 fw-bold">Book a Table</p>
+            </div>
+
+            <div class="container ">
+
+                <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6">
+                            <input type="text" name="name" class="form-control bg-bg-2" id="name" placeholder="Your Name"
+                                required="">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <input type="email" class="form-control bg-bg-2 text-white" name="email" id="email" placeholder="Your Email"
+                                required="">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <input type="text" class="form-control bg-bg-2 text-white" name="phone" id="phone" placeholder="Your Phone"
+                                required="">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <input type="date" name="date" class="form-control bg-bg-2 text-white" id="date" placeholder="Date"
+                                required="">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <input type="time" class="form-control bg-bg-2 text-white" name="time" id="time" placeholder="Time"
+                                required="">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <input type="number" class="form-control bg-bg-2 text-white" name="people" id="people"
+                                placeholder="# of people" required="">
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <textarea class="form-control bg-bg-2 text-white" name="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <button class="sent-message" type="submit">Book a Table</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
         <!-- gallery section -->
         <section id="Gallery" class="gallery section py-8">
 

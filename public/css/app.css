@@ -1,10 +1,20 @@
 @charset "UTF-8";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+.sent-message {
+  font-family: "Roboto";
+  border-radius: 20px;
+  border: #cda45e 2px solid;
+  background-color: transparent;
+  padding: 8px 10px;
+  color: #ffffff;
+  width: 300px;
+}
+
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root,
 [data-bs-theme=light] {
   --bs-bg-1: #0c0b09;
@@ -50429,16 +50439,6 @@ a:hover {
     text-align: center;
   }
 }
-.sent-message {
-  font-family: "Roboto";
-  border-radius: 20px;
-  border: #cda45e 2px solid;
-  background-color: transparent;
-  padding: 8px 10px;
-  color: #ffffff;
-  width: 300px;
-}
-
 .form-control {
   border: #cda45e 2px solid !important;
 }
