@@ -50107,7 +50107,7 @@ a:hover {
   color: #ffffff;
 }
 
-.close-btn,
+.close-btn2,
 #close-carousel {
   position: absolute;
   top: 1rem;
@@ -50128,7 +50128,7 @@ a:hover {
   transition: opacity 0.2s, background 0.2s;
 }
 
-.close-btn:hover,
+.close-btn2:hover,
 #close-carousel:hover {
   opacity: 1;
   background: #cda45e;

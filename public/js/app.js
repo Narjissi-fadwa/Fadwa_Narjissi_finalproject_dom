@@ -141,12 +141,19 @@ showCarouselBtn.addEventListener("click", function (e) {
     showCarouselBtn.style.display = "none"
 })
 
-let closeCarouselBtn = document.getElementById("close-carousel2")
-closeCarouselBtn.addEventListener("click", function () {
-    let carousel1 = document.getElementById("carousel1")
-    carousel1.style.display = "none"
-    let showCarouselBtn = document.getElementById("show-carousel")
-    showCarouselBtn.style.display = "inline"
+
+let closeCarouselBtns = document.querySelectorAll(".close-btn2")
+closeCarouselBtns.forEach(function(btn) {
+    btn.addEventListener("click", function () {
+        let carousel1 = document.getElementById("carousel1")
+        if (carousel1) {
+            carousel1.style.display = "none"
+        }
+        let showCarouselBtn = document.getElementById("show-carousel")
+        if (showCarouselBtn) {
+            showCarouselBtn.style.display = "inline"
+        }
+    })
 })
 
 
