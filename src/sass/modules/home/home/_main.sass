@@ -57,6 +57,7 @@ body
     inset: 0
     z-index: 2
 
+// about section
 .about
     background: url('/public/images/about-bg.jpg') center center
     background-size: cover
@@ -82,19 +83,21 @@ body
     background-color: #00000090
     position: absolute
 
+.section-title
+    h2
+        font-family: $font-secondary
+    p
+        font-family: $font-secondary
+    h2::after
+        content: ""
+        width: 120px
+        height: 1px
+        display: inline-block
+        background: $color-primary
+        margin: 4px 10px
+
+// why-us section
 .why-us
-    .whyus-title
-        h2
-            font-family: $font-secondary
-        p
-            font-family: $font-secondary
-        h2::after
-            content: ""
-            width: 120px
-            height: 1px
-            display: inline-block
-            background: $color-primary
-            margin: 4px 10px
     .content-whyus
         .cards-whyus
             gap: 1rem
@@ -104,3 +107,52 @@ body
                         a
                             font-family: $font-secondary
 
+// menu section
+.menu
+.menu-items
+    display: flex
+    flex-wrap: wrap
+    gap: 1.5rem
+
+    .menu-item
+        display: flex
+        align-items: center
+
+    .menu-img
+        width: 80px
+        height: 80px
+        border-radius: 50%
+        border: 5px solid rgba(245, 244, 244, 0.21)
+        object-fit: cover
+        margin-right: 1rem
+    .menu-content
+        position: relative
+        &::after
+            content: "......................................................................"
+            position: absolute
+            left: 100px
+            right: 0px
+            top: -4px
+            z-index: 1
+        a,
+        span
+            position: relative
+            z-index: 2
+            background-color: #fff
+
+// Responsive tweaks
+
+@media (max-width: 768px)
+    .menu-items
+        position: relative !important
+        height: auto !important
+        display: flex !important
+        flex-direction: column !important
+        gap: 2rem !important
+
+    .menu-content
+        &::after
+            content: ".........................."!important
+    .menu-item
+        position: static !important
+        width: 100% !important

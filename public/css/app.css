@@ -50096,13 +50096,13 @@ body .hero-title .video a svg {
   position: absolute;
 }
 
-.why-us .whyus-title h2, .why-us .whyus-title .h2 {
+.section-title h2, .section-title .h2 {
   font-family: "Playfair Display", serif;
 }
-.why-us .whyus-title p {
+.section-title p {
   font-family: "Playfair Display", serif;
 }
-.why-us .whyus-title h2::after, .why-us .whyus-title .h2::after {
+.section-title h2::after, .section-title .h2::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -50110,11 +50110,64 @@ body .hero-title .video a svg {
   background: #cda45e;
   margin: 4px 10px;
 }
+
 .why-us .content-whyus .cards-whyus {
   gap: 1rem;
 }
 .why-us .content-whyus .cards-whyus .card .card-item h4 a, .why-us .content-whyus .cards-whyus .card .card-item .h4 a {
   font-family: "Playfair Display", serif;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.menu-items .menu-item {
+  display: flex;
+  align-items: center;
+}
+.menu-items .menu-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid rgba(245, 244, 244, 0.21);
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.menu-items .menu-content {
+  position: relative;
+}
+.menu-items .menu-content::after {
+  content: "......................................................................";
+  position: absolute;
+  left: 100px;
+  right: 0px;
+  top: -4px;
+  z-index: 1;
+}
+.menu-items .menu-content a,
+.menu-items .menu-content span {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu-items {
+    position: relative !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  .menu-content::after {
+    content: ".........................." !important;
+  }
+  .menu-item {
+    position: static !important;
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
