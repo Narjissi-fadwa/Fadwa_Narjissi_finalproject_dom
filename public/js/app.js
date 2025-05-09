@@ -171,3 +171,17 @@ specialsFilterBtns.forEach(btn => {
         });
     });
 });
+
+// ! Event Carousel
+let track = document.querySelector('.event-track')
+let slides = Array.from(track.children)
+let indicators = document.querySelectorAll('.event-indicator')
+indicators.forEach(indicator => {
+    indicator.addEventListener('click', () => {
+    let index = parseInt(indicator.getAttribute('data-index'))
+    let slideWidth = slides[0].getBoundingClientRect().width
+      track.style.transform = `translateX(-${slideWidth * index}px)`
+        indicators.forEach(ind => ind.classList.remove('active'))
+        indicator.classList.add('active')
+    });
+});
