@@ -50275,5 +50275,22 @@ body .hero-title .video a svg {
     text-align: center;
   }
 }
+.sent-message {
+  font-family: "Roboto";
+  border-radius: 20px;
+  border: #cda45e 2px solid;
+  background-color: transparent;
+  padding: 8px 10px;
+  color: #ffffff;
+  width: 300px;
+}
+
+.form-control {
+  border: #cda45e 2px solid !important;
+}
+
+.form-control::placeholder {
+  color: #cda45e;
+}
 
 /*# sourceMappingURL=app.css.map */
