@@ -1,3 +1,4 @@
+//! nav responsive
 let nav = document.querySelector('.nav-respo')
 let navbar = document.querySelector('.navlist')
 let mybody = document.querySelector('body')
@@ -53,7 +54,7 @@ buttons.forEach(btn => {
 });
 
 
-//~ Menu Filter
+//! Menu Filter
 let filterButtons = document.querySelectorAll(".menu-filters a");
 let filterableItems = document.querySelectorAll(".menu-items .menu-item");
 
@@ -147,3 +148,26 @@ closeCarouselBtn.addEventListener("click", function () {
     let showCarouselBtn = document.getElementById("show-carousel")
     showCarouselBtn.style.display = "inline"
 })
+
+
+//! Specials Filter 
+let specialsFilterBtns = document.querySelectorAll(".s-left-filter .filter-btn a");
+let specialsDishes = document.querySelectorAll(".s-right-dishes .tab-pane");
+
+specialsFilterBtns.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        specialsFilterBtns.forEach(b => b.classList.remove("active", "show"));
+        this.classList.add("active", "show");
+
+        let name = this.getAttribute("data-name");
+        specialsDishes.forEach(dish => {
+            if (dish.getAttribute("data-name") === name) {
+                dish.classList.add("active", "show");
+            } else {
+                dish.classList.remove("active", "show");
+            }
+        });
+    });
+});
