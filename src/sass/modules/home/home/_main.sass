@@ -34,7 +34,7 @@ body
                     background-color: transparent
                     padding: 8px 30px
                     color: $color-white
-        .video
+        .hero-carrousel
             a
                 background-color: $color-primary !important
                 display: flex !important
@@ -47,6 +47,138 @@ body
                 justify-content: center
                 svg
                     fill: $color-white
+.close-btn,
+#close-carousel
+    position: absolute
+    top: 1rem
+    right: 1rem
+    z-index: 10
+    background: #232323
+    color: $color-white
+    border: none
+    border-radius: 50%
+    width: 2.5rem
+    height: 2.5rem
+    font-size: 1.2rem
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0.8
+    transition: opacity 0.2s, background 0.2s
+.close-btn:hover,
+#close-carousel:hover
+    opacity: 1
+    background: $color-primary
+    color: $color-white
+.h-right
+    align-self: left !important
+
+a
+    color: $color-primary
+    transition: 0.3s ease-in-out
+
+a:hover
+    color: $color-white
+
+.close-btn,
+#close-carousel
+    position: absolute
+    top: 1rem
+    right: 1rem
+    z-index: 10
+    background: #232323
+    color: $color-white
+    border: none
+    border-radius: 50%
+    width: 2.5rem
+    height: 2.5rem
+    font-size: 1.2rem
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0.8
+    transition: opacity 0.2s, background 0.2s
+
+.close-btn:hover,
+#close-carousel:hover
+    opacity: 1
+    background: $color-primary
+    color: $color-white
+
+.carousel-container
+    width: 92vw
+    height: 92vh
+    position: relative
+    border-radius: 10px
+    overflow: hidden
+    background: #29261f
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15)
+    margin: 0 auto
+    padding: 1rem 0.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: -67rem
+    margin-top: -17rem
+    z-index: 999
+.carousel
+    width: 100%
+    height: 100%
+    display: flex
+    transition: transform 0.5s
+.slide
+    min-width: 100%
+    height: 100%
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    box-sizing: border-box
+    z-index: 999999999
+.slide > img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 10px
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08)
+.next-btn,
+.previous-btn
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background: #29261f
+    color: $color-white
+    border: none
+    border-radius: 50%
+    width: 2.5rem
+    height: 2.5rem
+    font-weight: bold
+    font-size: 1.2rem
+    cursor: pointer
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12)
+    z-index: 10
+    transition: background 0.2s, color 0.2s
+    opacity: 0.85
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 999999999
+.next-btn:hover,
+.previous-btn:hover
+    background: $color-primary
+    color: $color-white
+    opacity: 1
+
+.next-btn
+    right: 1rem
+    z-index: 999999999
+
+.previous-btn
+    left: 1rem
+    z-index: 999999999
+
 .home::before
     content: ""
     width: 100%
