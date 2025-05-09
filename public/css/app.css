@@ -50153,6 +50153,10 @@ body .hero-title .video a svg {
   background-color: #fff;
 }
 
+.menu-hide {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .menu-items {
     position: relative !important;

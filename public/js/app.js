@@ -51,3 +51,29 @@ buttons.forEach(btn => {
     })
 
 });
+
+
+//~ Menu Filter
+let filterButtons = document.querySelectorAll(".menu-filters a");
+let filterableItems = document.querySelectorAll(".menu-items .menu-item");
+
+function setActive(elements, className, activeElement) {
+    elements.forEach(el => el.classList.remove(className));
+    activeElement.classList.add(className);
+}
+
+function filterItems() {
+    const filter = this.dataset.name;
+
+    setActive(filterButtons, "filter-active", this);
+
+    filterableItems.forEach(item => {
+        item.classList.add("menu-hide");
+
+        if (filter === "all" || item.dataset.name === filter) {
+            item.classList.remove("menu-hide");
+        }
+    });
+}
+
+filterButtons.forEach(btn => btn.addEventListener("click", filterItems));
